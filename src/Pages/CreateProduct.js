@@ -1,6 +1,8 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
+import { Navigate, redirect } from 'react-router'
 
 const CreateProduct = () => {
+    
     const [description,setDescription] = useState('')
     const [productName,setProductName] = useState('')
     const [gender,setGender] = useState('')

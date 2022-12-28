@@ -1,8 +1,11 @@
-import React, { useState,useContext } from 'react'
-import { useParams } from 'react-router'
+import React, { useEffect,useState,useContext } from 'react'
+import { Navigate, useParams } from 'react-router'
+import { redirect } from 'react-router';
 import { ProductContext } from '../contexts/ProductContext';
 
 const ModifyProduct = () => {
+   
+
     const {id} =useParams();
     const {products} =useContext(ProductContext);
   
